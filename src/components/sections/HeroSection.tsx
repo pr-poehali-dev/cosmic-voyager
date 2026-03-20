@@ -1,7 +1,11 @@
 import { LiquidCtaButton } from "@/components/buttons/LiquidCtaButton"
 import { Home, ArrowRight } from "lucide-react"
 
-export function HeroSection() {
+interface HeroSectionProps {
+  onOrderClick?: () => void
+}
+
+export function HeroSection({ onOrderClick }: HeroSectionProps) {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20 relative">
       {/* Background image */}
@@ -35,9 +39,9 @@ export function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#pricing">
+          <button onClick={onOrderClick}>
             <LiquidCtaButton>Рассчитать стоимость</LiquidCtaButton>
-          </a>
+          </button>
           <a
             href="#features"
             className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors"

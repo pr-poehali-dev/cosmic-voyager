@@ -1,5 +1,9 @@
 import { Check } from "lucide-react"
 
+interface PricingSectionProps {
+  onOrderClick?: (project: string) => void
+}
+
 const plans = [
   {
     name: "Дача",
@@ -46,7 +50,7 @@ const plans = [
   },
 ]
 
-export function PricingSection() {
+export function PricingSection({ onOrderClick }: PricingSectionProps) {
   return (
     <section id="pricing" className="px-6 py-24">
       <div className="max-w-5xl mx-auto">
@@ -103,8 +107,8 @@ export function PricingSection() {
               </ul>
 
               {/* CTA */}
-              <a
-                href="#"
+              <button
+                onClick={() => onOrderClick?.(plan.name)}
                 className={`block w-full py-3 px-6 text-center rounded-full font-medium text-sm transition-colors mt-auto ${
                   plan.highlighted
                     ? "bg-white text-zinc-900 hover:bg-zinc-100"
@@ -112,7 +116,7 @@ export function PricingSection() {
                 }`}
               >
                 {plan.cta}
-              </a>
+              </button>
             </div>
           ))}
         </div>

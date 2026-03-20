@@ -1,7 +1,11 @@
 import { ArrowRight } from "lucide-react"
 import { LiquidCtaButton } from "@/components/buttons/LiquidCtaButton"
 
-export function CtaSection() {
+interface CtaSectionProps {
+  onOrderClick?: () => void
+}
+
+export function CtaSection({ onOrderClick }: CtaSectionProps) {
   return (
     <section className="px-6 py-24">
       <div className="max-w-3xl mx-auto text-center">
@@ -10,9 +14,9 @@ export function CtaSection() {
           Присоединяйтесь к 300+ семьям, которые уже живут в своём каркасном доме. Получите расчёт стоимости за 24 часа.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#pricing">
+          <button onClick={onOrderClick}>
             <LiquidCtaButton>Рассчитать стоимость</LiquidCtaButton>
-          </a>
+          </button>
           <a
             href="#"
             className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors"
