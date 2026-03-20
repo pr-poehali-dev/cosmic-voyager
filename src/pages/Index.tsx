@@ -8,7 +8,7 @@ import { FooterSection } from "@/components/sections/FooterSection"
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <main>
         <HeroSection />

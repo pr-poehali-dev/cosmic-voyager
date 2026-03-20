@@ -10,26 +10,26 @@ export function HeroSection() {
         style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/a0245acf-3add-4dea-942f-7679daf4115f/files/e905570b-6214-4ed5-835a-667a00090399.jpg')" }}
       />
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/60 to-zinc-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/50 to-white" />
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-zinc-800 mb-8">
-          <Home className="w-4 h-4 text-zinc-400" />
-          <span className="text-sm text-zinc-400">Строим под ключ — от фундамента до отделки</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 border border-zinc-200 mb-8 shadow-sm">
+          <Home className="w-4 h-4 text-zinc-500" />
+          <span className="text-sm text-zinc-600">Строим под ключ — от фундамента до отделки</span>
         </div>
 
         {/* Headline */}
         <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          <span className="text-zinc-100 block">Ваш дом мечты</span>
-          <span className="bg-gradient-to-r from-zinc-500 via-zinc-300 to-zinc-500 bg-clip-text text-transparent">
+          <span className="text-zinc-900 block">Ваш дом мечты</span>
+          <span className="bg-gradient-to-r from-zinc-600 via-zinc-400 to-zinc-600 bg-clip-text text-transparent">
             за 90 дней.
           </span>
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
+        <p className="text-lg md:text-xl text-zinc-600 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
           Строим каркасные дома быстро, тепло и надёжно. Современные технологии, фиксированная цена в договоре, гарантия 10 лет.
         </p>
 
@@ -40,7 +40,7 @@ export function HeroSection() {
           </a>
           <a
             href="#features"
-            className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors"
+            className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors"
           >
             <span>Почему каркасный дом</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -99,7 +99,7 @@ export function HeroSection() {
                 <span className="text-zinc-400 font-medium ml-1 text-sm">5.0</span>
               </div>
               <p className="text-sm text-zinc-500">
-                Построили <span className="text-zinc-300 font-medium">300+</span> домов по всей России
+                Построили <span className="text-zinc-800 font-medium">300+</span> домов по всей России
               </p>
             </div>
           </div>
