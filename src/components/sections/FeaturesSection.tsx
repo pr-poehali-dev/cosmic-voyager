@@ -3,14 +3,14 @@ import { Zap, BarChart3, Layers, ArrowRight, Command } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const integrationLogos = [
-  { name: "Tool 1" },
-  { name: "Tool 2" },
-  { name: "Tool 3" },
-  { name: "Tool 4" },
-  { name: "Tool 5" },
-  { name: "Tool 6" },
-  { name: "Tool 7" },
-  { name: "Tool 8" },
+  { name: "Rockwool" },
+  { name: "Knauf" },
+  { name: "Isover" },
+  { name: "ТЕХНОНИКОЛЬ" },
+  { name: "Kronospan" },
+  { name: "LP SmartSide" },
+  { name: "James Hardie" },
+  { name: "Rehau" },
 ]
 
 export function FeaturesSection() {
@@ -25,12 +25,12 @@ export function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Функции</p>
+          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Преимущества</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-zinc-100 mb-4">
-            Все для вашего успеха
+            Почему выбирают каркасный дом
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-balance">
-            Мощные инструменты, которые помогут выпускать продукты быстрее.
+            Современная технология строительства, которая сочетает скорость, тепло и долговечность.
           </p>
         </motion.div>
 
@@ -53,10 +53,10 @@ export function FeaturesSection() {
                   >
                     <BarChart3 className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Дашборд в реальном времени</p>
+                  <p className="font-heading font-semibold text-zinc-100">Прозрачные сроки и стоимость</p>
                 </div>
                 <p className="text-zinc-500 text-sm mb-5">
-                  Отслеживайте важные метрики с настраиваемыми панелями.
+                  Фиксированная цена в договоре, чёткий план работ и отчёты на каждом этапе.
                 </p>
                 <div className="rounded-xl border border-zinc-800 bg-zinc-950 p-4 overflow-hidden">
                   <div className="flex items-center justify-between mb-4">
@@ -74,7 +74,7 @@ export function FeaturesSection() {
                         transition={{ delay: 0.5 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-400" />
-                        <span className="text-xs text-zinc-500">Пользователи</span>
+                        <span className="text-xs text-zinc-500">Готовность</span>
                       </motion.div>
                       <motion.div
                         className="flex items-center gap-1.5"
@@ -84,16 +84,16 @@ export function FeaturesSection() {
                         transition={{ delay: 0.6 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-600" />
-                        <span className="text-xs text-zinc-500">Выручка</span>
+                        <span className="text-xs text-zinc-500">Бюджет</span>
                       </motion.div>
                     </div>
                   </div>
                   {/* Animated metrics row */}
                   <div className="grid grid-cols-3 gap-3 mb-4">
                     {[
-                      { label: "Пользователи", value: "12,4 тыс", change: "+12%" },
-                      { label: "Выручка", value: "4,8 млн ₽", change: "+8%" },
-                      { label: "Конверсия", value: "3,2%", change: "+2%" },
+                      { label: "Сдано домов", value: "300+", change: "+47%" },
+                      { label: "Срок стройки", value: "90 дней", change: "-20%" },
+                      { label: "В срок", value: "98%", change: "+3%" },
                     ].map((metric, i) => (
                       <motion.div
                         key={metric.label}
@@ -162,9 +162,9 @@ export function FeaturesSection() {
                   >
                     <Zap className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Молниеносная скорость</p>
+                  <p className="font-heading font-semibold text-zinc-100">Строим быстро</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Оптимизировано для скорости на любом масштабе.</p>
+                <p className="text-zinc-500 text-sm mb-5">Каркасная технология позволяет завершить стройку за 90 дней.</p>
                 <div className="mt-auto">
                   <div className="flex items-baseline gap-2 mb-3">
                     <motion.span
@@ -173,9 +173,9 @@ export function FeaturesSection() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                     >
-                      99.9%
+                      90
                     </motion.span>
-                    <span className="text-zinc-500 text-sm">аптайм</span>
+                    <span className="text-zinc-500 text-sm">дней до ключей</span>
                   </div>
                   <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
                     <motion.div
@@ -208,11 +208,11 @@ export function FeaturesSection() {
                   >
                     <Command className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Сначала клавиатура</p>
+                  <p className="font-heading font-semibold text-zinc-100">Тепло и энергосбережение</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Любое действие на расстоянии одной клавиши.</p>
+                <p className="text-zinc-500 text-sm mb-5">Утеплитель 200 мм, тёплые зимой и прохладные летом.</p>
                 <div className="flex justify-center gap-2 mt-auto">
-                  {["Cmd", "K"].map((key, i) => (
+                  {["A+", "🏠"].map((key, i) => (
                     <motion.div
                       key={key}
                       className="flex items-center justify-center w-12 h-12 rounded-xl bg-zinc-800/80 border border-zinc-700/50 shadow-lg"
@@ -252,9 +252,9 @@ export function FeaturesSection() {
                   >
                     <Layers className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">100+ интеграций</p>
+                  <p className="font-heading font-semibold text-zinc-100">Только проверенные материалы</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Подключайте инструменты, которыми пользуетесь ежедневно.</p>
+                <p className="text-zinc-500 text-sm mb-5">Работаем с ведущими производителями стройматериалов.</p>
                 <div className="grid grid-cols-8 gap-2 mt-auto">
                   {integrationLogos.map((logo, i) => (
                     <motion.div
@@ -274,7 +274,7 @@ export function FeaturesSection() {
                   whileHover={{ x: 6 }}
                   className="mt-4 flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
                 >
-                  Все интеграции <ArrowRight className="w-4 h-4" />
+                  Все партнёры <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </CardContent>
             </Card>
